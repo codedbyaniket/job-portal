@@ -2,7 +2,6 @@
 import { Link } from "react-router-dom";
 import { Briefcase, Mail, Phone, MapPin } from "lucide-react";
 
-useContext
 const Footer = () => {
   
     
