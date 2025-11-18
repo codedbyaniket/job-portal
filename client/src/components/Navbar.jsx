@@ -3,7 +3,7 @@ import {assets}  from '../assets/assets'
 import { useClerk,useUser,UserButton } from '@clerk/clerk-react'
 import { Link, useNavigate } from 'react-router-dom'
 import { AppContext } from '../context/AppContext'
-
+import { Briefcase } from "lucide-react";
 const Navbar =()=>{
     const {openSignIn} = useClerk()
     ///this is used to check whether the user is login or not
@@ -14,7 +14,13 @@ const Navbar =()=>{
     return(
         <div className='shadow py-4'>
             <div className='container px-4 2xl:px-20 mx-auto flex justify-between items-center'>
-                <img onClick={()=>navigate('/')} className='cursor-pointer ' src={assets.logo} alt="" />
+               <div className="flex items-center gap-2 mb-4">
+              <div className="p-2 bg-linear-to-br from-blue-500 to-blue-700 rounded-lg">
+                <Briefcase className="size-5 text-white" />
+                 
+              </div>
+             <span className="text-black">JobPortal</span>
+            </div>
                 {/* this is where we do conditional if user is login and if user is not login*/ }
                 {
                    user

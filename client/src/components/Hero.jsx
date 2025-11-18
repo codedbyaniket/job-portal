@@ -23,10 +23,10 @@ const Hero = () => {
         initial={{ opacity: 0, y: 40 }}
         animate={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.7 }}
-        className="bg-gradient-to-br from-purple-800 via-purple-900 to-black text-white py-20 rounded-2xl shadow-xl relative mx-3 overflow-hidden"
+        className="bg-linear-to-br from-purple-800 via-purple-900 to-black text-white py-20 rounded-2xl shadow-xl relative mx-3 overflow-hidden"
       >
         {/* Soft Glow Effect */}
-        <div className="absolute inset-0 bg-gradient-to-r from-transparent via-purple-900/20 to-transparent blur-3xl"></div>
+        <div className="absolute inset-0 bg-linear-to-r from-transparent via-purple-900/20 to-transparent blur-3xl"></div>
 
         <motion.h2
           initial={{ opacity: 0, y: 10 }}

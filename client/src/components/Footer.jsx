@@ -2,37 +2,25 @@
 import { Link } from "react-router-dom";
 import { Briefcase, Mail, Phone, MapPin } from "lucide-react";
 
+useContext
 const Footer = () => {
+  
+    
   return (
     <footer className="bg-linear-to-br from-gray-900 via-gray-800 to-gray-900 text-gray-300 mt-auto">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8 md:py-12">
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
           {/* Brand */}
           <div>
-           
+            
             <p className="text-sm text-gray-400 leading-relaxed">
               Find your dream job or hire the perfect candidate. Your career journey starts here.
             </p>
           </div>
 
-          {/* Quick Links */}
-          <div>
-            <h3 className="text-white mb-4">Quick Links</h3>
-            <ul className="space-y-2 text-sm">
-              <li><Link to="/" className="hover:text-blue-400 transition-colors">Browse Jobs</Link></li>
-              <li><Link to="/login" className="hover:text-blue-400 transition-colors">Login</Link></li>
-              <li><Link to="/register" className="hover:text-blue-400 transition-colors">Register</Link></li>
-            </ul>
-          </div>
+        
 
-          {/* For Companies */}
-          <div>
-            <h3 className="text-white mb-4">For Companies</h3>
-            <ul className="space-y-2 text-sm">
-              <li><Link to="/company/add-job" className="hover:text-blue-400 transition-colors">Post a Job</Link></li>
-              <li><Link to="/company/manage-jobs" className="hover:text-blue-400 transition-colors">Manage Jobs</Link></li>
-            </ul>
-          </div>
+         
 
           {/* Contact */}
           <div>
